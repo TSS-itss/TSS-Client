@@ -1,0 +1,104 @@
+import gql from 'graphql-tag';
+export default gql`
+mutation saveBuyer(
+  $applicationid:String,
+$client:String,
+$lang:String,
+$firstname:String,
+$z_id:String,
+$t_id:String,
+$supid:String,
+$lastname:String,
+$country:String,
+$city:String,
+$inbusinesssince:String,
+$email:String,
+$primarynumber:String,
+$addemail:String,
+$addnumber:String,
+$addemailnumber:String,
+$website:String,
+$companyname:String,
+$accounttype:String,
+$category:String,
+$address:String,
+$completeaddress:String,
+$gstnumber:String,
+$tannumber:String,
+$businesspannumber:String,
+$pan_files:[FileType],
+$gst_files:[FileType]
+)
+    {
+        saveBuyer(
+          applicationid:$applicationid,
+        client: $client,
+    lang: $lang,
+    z_id:$z_id,
+    t_id:$t_id,
+          buyid:$supid,
+          firstname:$firstname
+          lastname:$lastname,
+          country:$country,
+          city:$city,
+          inbusinesssince:$inbusinesssince,
+          email:$email,
+          primarynumber:$primarynumber,
+          addemail:$addemail,
+          addnumber:$addnumber,
+          addemailnumber:$addemailnumber,
+          website:$website,
+          companyname:$companyname,
+          accounttype:$accounttype,
+          category:$category,
+          address:$address,
+          completeaddress:$completeaddress,
+          gstnumber:$gstnumber
+          tannumber:$tannumber,
+          businesspannumber:$businesspannumber,
+          pan_files:$pan_files
+          gst_files:$gst_files
+      )
+      {
+        applicationid
+    client
+    lang
+	 firstname,
+    z_id,
+    t_id,
+    buyid,
+    firstname,
+    lastname,
+    country,
+    city,
+    inbusinesssince,
+    email,
+    primarynumber,
+    addemail,
+    addnumber,
+    addemailnumber,
+    website,
+    companyname,
+    accounttype,
+    category,
+    address,
+    completeaddress,
+    gstnumber,
+    gst_files{fileid},
+    tannumber,
+    businesspannumber,
+    pan_files{fileid},
+    cdate,
+    ctime,
+    cuser,
+    udate,
+    utime,
+    uuser,
+    ddate,
+    dtime,
+    duser,
+    isdel
+        
+	  }
+    }  
+`;

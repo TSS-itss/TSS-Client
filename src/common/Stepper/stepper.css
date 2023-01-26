@@ -1,0 +1,135 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+  }
+  #form1{
+    left: 25px;
+  }
+  html {
+    background: #f1f5f9;
+  }
+.stepper-container{
+    width: 100%;
+    background: #fff;
+     padding: 0;
+     
+   /* height: calc(100vh);
+    position: relative;
+    overflow: hidden; */
+}
+
+.stepper-container h3{
+    /* text-align: center;
+    margin-bottom: 1rem; */
+    color: #777;
+}
+
+.stepper-container .step-form{
+    width: calc((100%) - 50px);
+    position:absolute;
+    top:70px;
+    left:25px;
+    transition: 0.5s;
+    background-color: #fff;
+    padding: 30px;
+}
+
+/* .stepper-container .step-form input{
+    width: 80%;
+    padding: 10px 5px;
+    margin: 5px 0;
+    border: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+} */
+.stepper-container .btn-box {
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.stepper-container button{
+    width: 150px;
+    height: 35px;
+    margin: 0 10px;
+    background: linear-gradient(to right, var(--main-color), var(--main-color));
+    border-radius: 30px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+#form2{
+    left:100%;
+}
+#form3{
+    left:100%;
+}
+.step-row{
+    width: 100%;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border-bottom:  1px #777 solid;
+    position: relative;
+}
+.step-row .step-col{
+    width: calc((100vw - 3rem) / 3 );
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+#progress{
+    position:absolute;
+    height: 100%;
+    width: calc((100%) / 3 );
+    transition: 1s;
+    background: linear-gradient(to right, var(--main-color), var(--main-color));;
+}
+
+#progress::after{
+    content:"";
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top:0;
+    border-left: 20px solid var(--main-color);
+}
+
+@media only screen and (max-width: 560px) {
+    
+element.style {
+}
+.stepper-container button {
+    width: 100%;
+    
+    margin: 10px 0px;
+}
+.stepper-container .btn-box {
+    margin: 0px auto;
+    
+}
+
+#progress::after{
+    content:"";
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right: -20px;
+    top:0;
+    border-left: 20px solid var(--main-color);
+}
+}

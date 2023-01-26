@@ -1,0 +1,239 @@
+.textile-modal-container{
+    position: absolute;
+    /* visibility: hidden;  */
+    left: 0;
+    top:0;
+    margin: 0;
+    padding: 0;
+    background: rgba(129, 129, 138, 0.25);
+    height: 100%;
+    width: 100%;
+    z-index: 101;
+    transition: .3s ease-in;
+
+}
+
+.textile-modal-container .center, .textile-modal-container .content{
+    position: absolute;
+    top: 15%;
+    left:50%;
+    transform: translate(-50%, 0%);
+    z-index: 102;
+    
+}
+
+
+
+
+/* .click-me{
+    display: block;
+    width: 160px;
+    height: 50px;
+    background: #27ae60;
+    border: 1px solid #26a65b;
+    color:#fff;
+    text-align: center;
+    font-size: 22px;
+    line-height: 50px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.click-me:hover{
+    background: #219150;
+} */
+
+
+/* #click:checked ~ .textile-modal-container{
+   
+    visibility: visible;
+
+} */
+
+.textile-modal-container .content{
+    user-select: none;
+    background: #fff;
+    width: 800px;
+    
+    border-radius: 3px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .4);
+    /* transition: .3s ease-in; */
+}
+/* #click:checked ~ .content{
+    opacity: 1;
+    visibility: visible;
+
+} */
+.header{
+    height: 50px;
+    background: var(--main-color);
+    overflow: hidden;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
+}
+
+.header h3{
+    color:white;
+    padding-left: 2rem;
+    padding-top: .5rem;
+    font-weight: normal;
+}
+
+.textile-modal-container .fa-times{
+    position: absolute;
+    right: 20px;
+    top:20px;
+    color: #e8f7fc;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.textile-modal-container .fa-check{
+    font-size: 50px;
+    color: var(--main-color);
+    margin: 30px 0 0 210px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid var(--main-color);
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 50%;
+}
+
+.textile-modal-container p{
+    padding-top: 1rem;
+    font-size: 19px;
+    color: #aeaeae;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+}
+
+.textile-modal-container .line{
+    
+    
+    width: 100%;
+    height: 1px;
+    background: silver;
+}
+
+.textile-modal-container .close-btn{
+    position: absolute;
+    bottom: 12px;
+    right: 25px;
+    border: 1px solid #27ae60;
+    border-radius: 3px;
+    color: #27ae00;
+    padding: 8px 10px;
+    font-size:18px;
+    cursor: pointer;
+}
+
+.textile-modal-container .close-btn:hover{
+    background: #27ae60;
+    color: #fff;
+    transition: .5s;
+}
+
+.modal-buttons-section{
+    width:100%;
+    height:60px;
+    display:flex;
+}
+
+.modal-button{
+    flex:1;
+    width:100%;
+    text-align:center;
+    background:#aeaeae;
+    position:relative;
+    color:#fefefe;
+}
+
+.modal-button span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 600;
+}
+
+.modal-button.confirm{
+    background: var(--main-color);
+}
+
+.modal-button.confirm:hover{
+    background: var(--main-color);
+}
+
+.count-container{
+/* padding: 5px 10px; */
+/* border: 1px solid #cecece; */
+
+}
+
+.count-div{
+    width: 40px;
+   /* height: 20px; */
+    text-align: center;
+    float: left;
+    padding: 5px;
+    border: 1px solid #cecece;
+}
+
+.count-div:hover{
+    background-color: var(--main-color);
+    color: #FBFFFF;
+}
+.count-div-active{
+    background-color: var(--main-color);
+    color: #FBFFFF;
+}
+
+@media only screen and (max-width: 768px) {
+    .textile-modal-container .content{
+        user-select: none;
+        background: #fff;
+        width: 600px;
+        
+        border-radius: 3px;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .4);
+        /* transition: .3s ease-in; */
+    }
+
+    count-div{
+        width: 30px;
+       /* height: 20px; */
+        text-align: center;
+        float: left;
+        padding: 3px;
+        border: 1px solid #cecece;
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 560px) {
+    .textile-modal-container .content{
+        user-select: none;
+        background: #fff;
+        width: 400px;
+        
+        border-radius: 3px;
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .4);
+        /* transition: .3s ease-in; */
+    }
+
+    count-div{
+        width: 20px;
+       /* height: 20px; */
+        text-align: center;
+        float: left;
+        padding: 3px;
+        border: 1px solid #cecece;
+        font-size: 12px;
+    }
+
+}
